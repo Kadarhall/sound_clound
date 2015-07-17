@@ -21,7 +21,7 @@ html, body {
 
 body {
 	background: url('https://download.unsplash.com/photo-1420161900862-9a86fa1f5c79') no-repeat center fixed;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 
 #page {

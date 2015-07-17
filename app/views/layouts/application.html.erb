@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SoundClound</title>
+  <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">  
+    
+</head>
+<body>
+
+	<ul id="menu">
+		<li><a title="Home" href="/">Home</a></li>
+		<li><a title="About Me" href="/about">About Me</a></li>
+		<li><a title="Contact Me" href="/contact">Contact Me</a></li>
+	</ul>
+
+
+
+<div id="page">
+
+
+	<header>
+
+  
+ </header>
+
+
+	<div class="top">
+
+		<ul class="nav nav-pills pull-left">
+			<li><a href="#" class="Home active"><i class="fa fa-home"></i> Home</a></li>
+			<li><a href="#" class="About"><i class="fa fa-user"></i> About</a></li>
+			<!-- <li><a href="/search" class="Search"><i class="fa fa-search"></i> Search</a></li> -->
+		</ul>
+
+	<ul class="nav nav-pills pull-right">
+		<li><a href="#" class="connect">Connect with SoundCloud</a></li>
+	  <li><p>Hello, your name is <span id="username"></span></p></li>
+	</ul>
+
+	</div>
+	
+	
+
+
+
+
+<!-- <button id="press">Show Tracks</button> -->
+
+	<ul class="nav nav-pills recorder">
+		<li id="startRecording"><a href="#">Start Recording</a></li>
+	   <li id="stopRecording"><a href="#">Stop Recording</a></li>
+	   <li id="playBack"><a href="#">Play Recorded Sound</a></li>
+	   <li id="upload"><a href="#">Upload</a></li>
+	   
+  </ul>
+
+  
+
+  <p class="status"></p>
+
+<a href="#" id="toggle-menu">&#9776</a>
+
+
+
+<form id="target" action="">
+  	 <input type="search" name="search"  id="search" value="Seach..." >
+	   <input type="submit" value="Search Any Track" id="button">
+	</form>
+
+
+
+
+<%= yield %>
+
+
+
+
+
+
+<section>
+	<div class="profile">
+	
+	</div>
+</section>
+
+
+<footer>
+</footer>
+
+
+</div>
+
+</body>
+</html>

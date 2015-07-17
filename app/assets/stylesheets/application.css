@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('https://download.unsplash.com/photo-1420161900862-9a86fa1f5c79') no-repeat center fixed;
+	background-size: 100%;
+}
+
+#page {
+	position: relative;
+	z-index: 20;
+	height: 100%;
+}
+
+#toggle-menu {
+	position: absolute;
+	top: 70px;
+	right: 50px;
+	font-size: 25px;
+}
+
+#menu {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+
+	width: 240px;
+	padding: 15px 25px;
+	margin: 0;
+
+	list-style: none;
+	background: #333;
+	z-index: 10;
+}
+
+#menu a {
+	display: block;
+	color: #fff;
+	padding: 15px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.top {
+	color: #fff;
+	height: 70px;
+	background-color: #DA5B3A;
+	opacity: 0.9;
+	font-size: 20px;
+}
+
+.top .pull-right ul li {
+	display: block;
+}
+
+
+.pull-right li {
+	margin-right: 20px;
+}
+
+#search {
+	border-radius: 10px;
+	text-align: left;
+	width: 500px;
+	border: none;
+	font-size: 20px;
+	color: #dbdbdb;
+	padding-left: 5px;
+}
+
+#button {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: black;
+	color: white;
+	margin-left: -12px;
+	border: none;
+	font-size: 20px;
+}
+
+.recorder {
+	height: 50px;
+	margin-bottom: 100px;
+	background-color: black;
+	opacity: 0.9;
+}
+
+.tracks {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.tracks h3 {
+	color: #fff;
+}
+
+.showcase {
+	color: #fff;
+}
+
+#results {
+	color: #fff;
+	font-size: 16px;
+	background-color: black;
+	padding: 20px;
+	opacity: 0.9;
+	text-shadow: 0 2px 2px #fff;
+}
+
+#results li {
+	display: block;
+	list-style-type: upper-roman;
+}
+
+#results li:hover {
+	background-color: #DA5B3A;
+}
+
+button {
+	border-radius: 10px;
+}
+
+.status {
+	color: #fff;
+	font-size: 20px;
+}
+
+.top ul {
+	list-style-type: none;
+	display: inline;
+}
+
+.top ul li {
+	display: inline-block;
+}
+
+div {
+/*	padding: 20px;*/
+	opacity: 0.95;
+}
+
+#player1 {
+	background: #dbdbdb;
+	opacity: 0.9;
+}
+
+.profile {
+	background: url('brave.png');
+	background-size: 20%;
+	display: block;
+	height: 290px;
+	background-position: cover;
+}
+
+footer {
+	color: #fff;
+	height: 80px;
+	background-color: #DA5B3A;
+	opacity: 0.9;
+}

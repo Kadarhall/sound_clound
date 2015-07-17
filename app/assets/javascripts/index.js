@@ -30,7 +30,7 @@ $('#target').submit(function(e) {
 
 SC.initialize({
   client_id: 'f4828ea08c69212fbf00d934b130d98a',
-  redirect_uri: 'http://localhost:3000/callback',
+  redirect_uri: 'https://evening-fortress-3192.herokuapp.com/callback',
 });
 
 // SC.connect(function(){
